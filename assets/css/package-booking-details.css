@@ -1,0 +1,506 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Harrington;
+  background-color: #444;
+  color: white;
+  width: 100%;
+}
+
+/* Header Section */
+
+#nav-logo-self {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+#nav-text-container {
+  color: #EEEEEE;
+  display: flex;
+  /* padding: 0em 1em; */
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Hero Section */
+
+#hero-container-self {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  /* margin: 0 auto; */
+  margin-top: 3em;
+  /* margin-bottom: 3em; */
+}
+
+#hero-left {
+  color: #EEEEEE;
+  /* display: flex;
+  flex-direction: column; */
+  padding-top: 4em;
+  padding-left: 5em;
+  color: white;
+  width: 50%;
+  /* flex-grow: 1; */
+}
+
+#hero-left h1 {
+  font-size: 8em;
+}
+
+#hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 50%;
+}
+
+#hero-right img {
+  width: 65%;
+  box-shadow: 0px 0px 8px #EEEEEE;
+  border-radius: 20px;
+}
+
+/* Vendor Section */
+
+.vendor-list {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.vendor-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  width: calc(50% - 40px);
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #EEEEEE;
+}
+
+.vendor-details {
+  /* flex: 1; */
+  text-align: left;
+  padding: 20px;
+  width: 60%;
+}
+
+.vendor-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vendor-image {
+  width: 50%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+/* Reviews Section */
+
+.review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    /* background-color: #444; */
+    color: #EEEEEE;
+}
+
+.review-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    /* background-color: #444; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #EEEEEE;
+}
+
+.review-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.review-details {
+    text-align: center;
+}
+
+.review-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.review-details p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Booking Section */
+
+.book-now-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    padding: 50px;
+    /* background-color: #333; */
+    color: #EEEEEE;
+}
+
+.booknow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #EEEEEE;
+    margin-bottom: 20px;
+    /* width:50%; */
+}
+
+.booknow h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.booknow p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-now-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #797878;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-now-btn:hover {
+    background-color: #CCCCFF;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #EEEEEE;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+#counter {
+    font-size: 10em;
+    margin-bottom: 10px;
+}
+
+.counter-container p {
+    font-size: 1em;
+    text-align: center;
+    /* padding:-30px; */
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 992px) {
+    .review-item {
+        width: calc(50% - 20px);
+    }
+}
+
+/* For large desktops */
+@media only screen and (max-width: 1200px) {
+  .vendor-item {
+      width: calc(100% - 40px);
+      /* flex-wrap: wrap-reverse; */
+      text-align: center;
+  }
+  .vendor-details img {
+      margin: 20px;
+      height: 80%;
+      /* width: 40%; */
+  }
+  .booknow{
+    width:60%;
+  }
+  .counter-container{
+    margin:20px 0;
+  }
+  #hero-container-self{
+    flex-direction: column;
+    
+  }
+  #hero-left , #hero-right{
+    width:100%;
+  }
+}
+
+/* For desktops */
+@media only screen and (max-width: 992px) {
+  #hero-left h1 {
+      font-size: 5em;
+  }
+  #hero-left h2 {
+      font-size: 3em;
+  }
+  #hero-right img {
+      width: 50%;
+  }
+  .vendor-item {
+      width: calc(100% - 40px);
+      text-align: center;
+  }
+  .vendor-details img {
+      margin: 20px;
+      height: 80%;
+      width: 40%;
+  }
+  .booknow{
+    width:70%;
+  }
+  .counter-container{
+    margin:20px 0;
+  }
+
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+
+#typing-effect {
+font-size: 36px;
+font-weight: bold;
+text-align: center;
+}
+
+#typing-effect::after {
+content: '';
+/* border-right: 2px solid #333; */
+animation: cursor 1s infinite;
+}
+.review-section {
+  /* background-color: #f7f7f7; */
+  padding: 50px;
+  text-align: center;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-item {
+  margin: 20px;
+  width: 300px;
+  /* background-color: #fff; */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-image {
+  width: 50%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+
+
+}
+
+.review-details {
+  padding: 20px;
+}
+
+.review-details h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-details p {
+  font-size: 14px;
+  /* color: #666; */
+}
+
+
+.booking {
+  background-color: #444;
+  font-family: Harrington;
+  color: ddd;
+  /* padding: 50px; */
+  text-align: center;
+  margin-top: -50px;
+}
+
+.book-now-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin: 50px; */
+}
+
+.booknow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin: 20px; */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  width: 70%;
+  padding: 20px;
+}
+
+.booknow h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.booknow p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.book-now-btn {
+  background-color: #ddd;
+  color: #444;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.book-now-btn:hover {
+  background-color: #575757;
+  color:black;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  width: 70%;
+}
+
+#counter {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+@keyframes cursor {
+0% {
+  opacity: 1;
+}
+50% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+  .main #nav-logo-self img{
+    width: 40%;
+  }
+  .vendor-item {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 80%;
+  }
+  .vendor-details {
+      text-align: center;
+      width: 100%;
+  }
+  .vendor-image {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+  }
+
+  #hero-container-self{
+    margin-top: 0px;
+    flex-direction: column;
+    width:100%;
+  }
+  #hero-left h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  #hero-right{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+  .book-now-container {
+    flex-direction: column;
+  }
+  .booking .booknow h2{
+    font-size: 1.7em;
+  }
+  .counter-container:nth-child(2){
+    font-size: 1em;
+  }
+}

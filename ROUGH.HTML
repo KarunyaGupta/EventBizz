@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 15px;
+        }
+        #notification {
+            display: none;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Random OTP Generator</h2>
+    <label for="mobile">Enter Mobile Number:</label>
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <button onclick="generateOTP()">Generate OTP</button>
+
+    <div id="notification"></div>
+
+    <script>
+        function generateOTP() {
+            const mobileNumber = document.getElementById('mobile').value;
+            if (mobileNumber.length === 0) {
+                alert("Please enter your mobile number.");
+                return;
+            }else if(mobileNumber.length>10 || mobileNumber.length<10){
+                alert("Please enter a valid mobile number.");
+                return;
+            }
+
+            // Generate a random 6-digit OTP
+            const otp = Math.floor(100000 + Math.random() * 900000);
+
+            // Display the OTP in a notification
+            showNotification(`Your OTP is: ${otp}`);
+        }
+
+        function showNotification(message) {
+            // Using a simple styled notification div
+            const notificationDiv = document.getElementById('notification');
+            notificationDiv.innerText = message;
+            notificationDiv.style.display = 'block';
+
+
+            // Automatically hide the notification after 5 seconds
+            setTimeout(() => {
+                notificationDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>

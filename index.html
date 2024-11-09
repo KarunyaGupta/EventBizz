@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBiz</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- <link rel="stylesheet" href="assets\css\footer.css"> -->
+    <link rel="stylesheet" href="assets\css\footer1.css">
+    <link rel="icon" type="img" href="./assets/images/LogoBg.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+        <section id="hero">
+            <video autoplay muted loop id="myVideo">
+                <source src="./assets/images/new/frontvideo.mp4" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <div class="hero-text">
+                    <h1>Seamless Solution <br>For <br> Unforgetable Memories</h1>
+                    <p><b>Explore your bugget with us</b>
+                    </p>
+                    <button id="vender-registration">Register as Vendor</button>
+                </div>
+            </div>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="./assets/images/new/logo.png" alt="Logo"></a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a onclick="scrollToTop()">Home</a></li>
+                    <li><a onclick="scrollToAbout()">About</a></li>
+                    <li><a onclick="scrollToService()">Services</a></li>
+                    <li><a onclick="scrollToReview()">Reviews</a></li>
+                    <li><a onclick="scrollToGallery()">Gallery</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    
+    <!-- /**********About us********** -->
+
+        <section id="aboutUs">
+        
+            <div class="container">
+                <div class="title">
+                    <h1>ABOUT US</h1>
+                </div>
+                <div class="content">
+                    <div class="aboutContent">
+                        <h3> 
+                            Welcome to Eventbiz! We specialize in creating memorable events that leave a lasting impression. Whether you're planning a corporate gathering, a wedding, or a community festival, our dedicated team is here to make your vision a reality
+                            With years of experience and a passion for perfection, we handle every detail with care and precision. From venue selection to catering, entertainment, and logistics, we ensure that every aspect of your event is meticulously planned and flawlessly executed.
+                           <p> Our mission is to exceed your expectations and deliver an event that is not only successful but also unforgettable. We thrive on creativity, professionalism, and the ability to adapt to your unique needs and preferences.
+                            Get in touch with us today to discuss your upcoming event. Let us take the stress out of planning so you can focus on enjoying every moment. We look forward to collaborating with you and creating an event that will be talked about for years to come</p>
+                        </h3>
+                        <div class="aboutButton">
+                             <a href=""> Read More</a>
+                        </div>
+                    </div>
+                    <div class="image-about">
+                        <img src="./assets/images/new/about.jpg" >
+                    </div>
+                </div>
+                
+                <div class="aboutIcons">
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+</section>
+<!-- services -->
+        <section id="Services">
+            <!-- <img src="https://img.freepik.com/premium-photo/web-banner-cover-design-background_1262542-102237.jpg?w=1380"> -->
+            <div class="container">
+                <div class="title">
+                    <h1>SERVICES</h1>
+                </div>
+                <div class="services-row">
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/wedding-icon.png">
+                         </div>
+                         <h3>Wedding</h3>
+                         <p>Varieties of wedding packages to fit your needs and budget. From intimate ceremonies to grand celebrations, we can help you create the perfect day. Our experienced wedding planners will work with you to ensure that every detail is taken care of, so you can relax and enjoy your special day.</p>
+                         <button class="service-button"><a href="./internal html/wedding-main.html">LET'S GO</a></button>
+                    </div>
+                
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/bday-icon.png">
+                         </div>
+                         <h3>Birthday Party</h3>
+                         <p>Celebrate your birthday in style with our exciting party packages. We offer a range of options to suit all ages and interests, from themed parties to casual gatherings. Our team will take care of everything, from decorations to entertainment, so you can focus on having fun with your guests.</p>
+                         <button class="service-button"><a href="./birthday-party.html">LET'S GO</a></button>
+                    </div>
+                
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/dj-icon.png">
+                         </div>
+                         <h3>DJ Night</h3>
+                         <p>Experience the ultimate night out with our DJ Night packages! DJs will set the mood with a curated mix of your favorite tracks, ensuring a lively atmosphere for any occasion. Dance the night away while we take care of the entertainment!</p>
+                         <button class="service-button"><a href="./sounddj.html">LET'S GO</a></button>
+                    </div>
+                
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/wedding-icon.png">
+                         </div>
+                         <h3>Pool Party</h3>
+                         <p>Make waves with our vibrant Pool Party packages! Ideal for summer fun, our pool parties feature engaging games, refreshing drinks, and a lively atmosphere. Whether it’s a birthday bash, family reunion, or corporate event Jump in and enjoy a memorable celebration with friends and family!</p>
+                         <button class="service-button"><a href="./poolparty.html">LET'S GO</a></button>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </section>
+        <!--vendors -->
+        <section id="vendors">
+            <div class="container">
+                <div class="title">
+                    <h1>Vendors</h1>
+                </div>
+                <div class="services-row">
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/wedding-icon.png">
+                         </div>
+                         <h3>Catrer</h3>
+                         <p>Transform your event into a culinary masterpiece. Our team of expert caterers specializes in crafting exquisite dishes that cater to every taste. From elegant fine dining to vibrant buffets, we'll ensure your guests are delighted with every bite.</p>
+                         <button class="service-button"><a href="./caterer.html">LET'S GO</a></button>
+                    </div>
+                
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/bday-icon.png">
+                         </div>
+                         <h3>Decorator</h3>
+                         <p>Create a stunning ambiance that reflects your vision. Our talented decorators will transform your event space into a magical setting. With meticulous attention to detail and a passion for design, we'll create a memorable experience that exceeds your expectations.</p>
+                         <button class="service-button"><a href="./decorater.html">LET'S GO</a></button>
+                    </div>
+                
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/dj-icon.png">
+                         </div>
+                         <h3>DJ</h3>
+                         <p>Set the mood and keep the party going. Our skilled DJs will provide the perfect soundtrack for your event. With a vast library of music and a knack for reading the crowd, we'll ensure everyone has an unforgettable time on the dance floor.</p>
+                         <button class="service-button"><a href="./sounddj.html">LET'S GO</a></button>
+                    </div>
+                
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/images/new/wedding-icon.png">
+                         </div>
+                         <h3>Photographer</h3>
+                         <p>Capture the precious moments of your event. Our professional photographers will expertly document every detail, ensuring you have beautiful memories to cherish for years to come. From candid shots to posed portraits, we'll capture the essence of your special occasion.</p>
+                         <button class="service-button"><a href="./photography.html">LET'S GO</a></button>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Gallery Section -->
+         
+        <section id="gallery">
+            <div class="container">
+                <div class="title">
+                    <h1>Gallery</h1>
+            </div>
+            
+    <!-- divinectorweb.com -->
+
+                <div class="team-area"> 
+                    <figure class="box">
+                        <figcaption>
+                            <h2>Birthday</h2>
+                            <p>20-May-2024</p>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </p>
+                        </figcaption>
+                        
+                        <img alt="Birthday Praty Preview" src="./assets/images/birthday-party/garden-party.jpg">
+                    </figure>
+                    
+                    <figure class="box">
+                        <figcaption>
+                            <h2>DJ Night</h2>
+                            <p>19-October-2024</p>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </p>
+                        </figcaption>
+                        
+                        <img alt="" src="./assets/images/djmain.jpg">
+                    </figure>
+                    
+                    <figure class="box">
+                        <figcaption>
+                            <h2>Wedding</h2>
+                            <p>4-February-2024</p>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </p>
+                        </figcaption>
+                        
+                        <img alt="" src="./assets/images/wedding-main.jpg">
+                    </figure>
+
+                    <figure class="box">
+                        <figcaption>
+                            <h2>Pool Party</h2>
+                            <p>10-September-2024</p>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </p>
+                        </figcaption>
+                        
+                        <img alt="" src="./assets/images/pool-main.jpg">
+                    </figure>
+                </div>
+            </div>
+        
+        </section>
+       
+
+
+        <!-- Review Section -->
+        <section id="review">
+            <h1 class="review-heading">What Our Clients Say?</h1>
+            <div class="review-container">
+                <div class="review-box">
+                    <div class="review-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="./assets/images/profile-img4.jpg" alt="profile-1">
+                            </div>
+                            <div class="name-user">
+                                <strong>JackSon</strong>
+                                <span>@jacksonasd</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comments">
+                        <p>I had an amazing experience with EventBiz. Their team went above and beyond to make my event unforgettable. The DJ night was top-notch and the overall atmosphere was fantastic. I highly recommend them!</p>
+                    </div>
+                
+                </div>
+                <div class="review-box">
+                    <div class="review-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="./assets/images/profile-img1.jpg" alt="profile-1">
+                            </div>
+                            <div class="name-user">
+                                <strong>Liam</strong>
+                                <span>@limakfsd</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comments">
+                        <p>I was particularly impressed with their wedding prepration. Everything made a huge difference in the overall outcome of my event. The team was also very responsive and accommodating to my requests.</p>
+                    </div>
+                
+                </div>
+                <div class="review-box">
+                    <div class="review-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="./assets/images/profile-img2.jpg" alt="profile-1">
+                            </div>
+                            <div class="name-user">
+                                <strong>Michael</strong>
+                                <span>@Michaelusa</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comments">
+                        <p> I was pleasantly surprised by the quality of the food at this restaurant. The service was impeccable and the atmosphere is very welcoming. The Shahi Paneer was simply delicious! I highly recommend this place to anyone looking for an unforgettable culinary experience</p>
+                    </div>
+                
+                </div>
+                <div class="review-box">
+                    <div class="review-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="./assets/images/profile-img.avif" alt="profile-1">
+                            </div>
+                            <div class="name-user">
+                                <strong>Acob</strong>
+                                <span>@acobnd</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comments">
+                        <p>The hotel was clean and the location was great. However, I found the room service to be a bit slow. Overall, it was a pleasant stay, but there are some aspects that could be improved.</p>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <section id="footer1">
+            <!-- Footer main container -->
+            <div id="footer-container">
+                <!-- Upper footer -->
+                <div id="footer-upper">
+                    <!-- First Column -->
+                    <div id="left-box1" class="jj">
+                        <p>Learn more about Heartful Help's journey and vision. In this piece, we share our story, values, and mission to bring about positive change to those in need</p>
+                    </div>
+                    <!-- Second Column -->
+                    <div id="left-box2" class="jj">
+                        <div>
+                            <ul>
+                                <li>Home</li>
+                                <li>Contact Us</li>
+                                <li>Events</li>
+                                <li>FAQ</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Third Column -->
+                    <div class="left-box-3">
+                        <h2>Contact</h2>
+                        <p>Ambience Mall, Ambience Island, NH- 8<br> Gurgaon,Haryana PIN: 122001</p> <!--div me karke display flex and justify content center-->
+                        <div id="email-mid">
+                            <img id="mid-logos" src="assets/images/email-logo.png" alt="email">
+                            <p>easybiz@gmail.com</p>
+                        </div>
+                        <div id="call-log">
+                            <img id="mid-logos" src="assets/images/call-logo.png" alt="call">
+                            <p>+91 61279 20508</p>
+                        </div>
+                    </div>
+                    <!-- Fourth Column -->
+                    <div id="left-box-4">
+                        <h3>Subscribe to our newsletter</h3>
+                        <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+                        <form class="email-class">
+                            <input id="email" type="email" placeholder="Enter your email">
+                            <button id="button" type="submit">Subscribe</button>
+                        
+                        </form>
+                    </div>
+                </div>
+                <!-- Footer line -->
+                <div id="footer-line">
+                    <hr>
+                </div> 
+                <!-- Footer Down CopyRight -->
+                 <div id="footer-lower">
+                    <div class="copyright">
+                        <p>&copy 2024 EventBiz &reg Global Inc. All rights reserved.</p>
+                    </div>
+                    
+                    <div id="logo-container">
+                        <a href="#">
+                            <img class="logo" src="./assets/images/icons8-facebook-144.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img class="logo" src="./assets/images/icons8-instagram-144.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img class="logo" src="./assets/images/linkedin-logo.png" alt="LinkedIn">
+                        </a>
+                        <a href="#">
+                            <img class="logo" src="./assets/images/icons8-twitter-144.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img class="logo" src="./assets/images/icons8-youtube-144.png" alt="YouTube">
+                        </a>
+                    </div>
+                 </div>
+    
+            </div>
+        </section>
+
+        <div id="top-button">
+            <div style="margin-top: -0.2em;">&#9757</div>
+        </div>
+
+
+        <!-- Modal Of Register as Vendor -->
+        <div id="bg-dull">
+            <div id="modal-center">
+                <div id="add_vendor" style="position: fixed; top: 0; display: block; width: fit-content; margin-top: 100px; background: #fff; height: auto; padding: 20px;">
+
+                    <div class="modal-body">
+                                
+                        <div class="product-input-box">
+                            <label for="vendor_name">Name: </label>
+                            <input type="text" name="vendor_name" id="vendor_name">
+                        </div>
+            
+                        <div class="product-input-box">
+                            <label for="vendor_age">Age: </label>
+                            <input type="number" name="vendor_age" id="vendor_age">
+                        </div>
+            
+                        <div class="product-input-box">
+                            <label for="vendor_email"> Email: </label>
+                            <input type="email" name="vendor_email" id="vendor_email">
+                        </div>
+            
+                        <div class="product-input-box">
+                            <label for="vendor_phone"> Phone No: </label>
+                            <input type="number" name="vendor_phone" id="vendor_phone">
+                        </div>
+            
+                        <div class="product-input-box">
+                            <label for="vendor_service">Service: </label>
+                            <input type="text" name="vendor_service" id="vendor_service">
+                        </div>
+            
+                        <div class="product-input-box">
+                            <label for="vendor_experience">Experience:</label>
+                            <input type="text" name="vendor_experience" id="vendor_experience">
+                        </div>
+            
+                        <!-- <input type="button" value="Register"> -->
+            
+                        <div class="modal-footer">
+                          
+                            <button type="button" id="close-modal">Close</button>
+                            <button onclick="addProduct()" type="button" class="btn btn-primary">Add Vendor</button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+ 
+        
+
+    <script src="./assets/JavaScript/index.js"></script>
+    <script src="assets/JavaScript/admin.js"></script>
+</body>
+</html>

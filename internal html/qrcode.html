@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #countdown {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #f44336;
+        }
+
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            background-color: #3e8e41;
+            transform: translateY(2px);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            img {
+                width: 80%;
+                max-width: 300px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="jokes">Click the button to generate a new QR code</h1>
+    <img src="" id="img" />
+    <h2 id="thnx" style="display: none;">Thank You! Have a EnjoyFull Event</h2>
+    <div id="countdown"></div>
+    <button id="getimage">Get QR Code</button>
+
+    <script>
+        const btn = document.querySelector('#getimage');
+        const img = document.querySelector('#img');
+        const jokesText = document.querySelector('#jokes');
+        const countdownDisplay = document.querySelector('#countdown');
+        const thnxdisp = document.querySelector('#thnx');
+
+        let countdownTimer; // Variable to store the countdown interval
+
+        // Event listener for the button click
+        btn.addEventListener("click", getimage);
+
+        async function getimage() {
+
+            // Sample text to encode into QR code
+            const data = "Hello, this is a QR code!";
+            
+            // Make a fetch request to the QR code API
+            let response = await fetch(`https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=${encodeURIComponent(data)}`);
+
+            if (!response.ok) {
+                alert("Network error");
+                return;
+            }
+
+            // Set the image source to the QR code URL
+            img.src = response.url;
+            img.style.display = "block"; // Show the image
+
+            // Update the message
+            jokesText.innerHTML = "New QR Code Generated!";
+            countdownDisplay.innerHTML = "Timeout: 10"; // Start countdown at 10 seconds
+
+            let countdown = 10; // Set the countdown starting value
+
+            // Start the countdown timer
+            countdownTimer = setInterval(() => {
+                countdown--;
+                countdownDisplay.innerHTML = `Timeout: ${countdown}`;
+                if (countdown <= 0) {
+                    clearInterval(countdownTimer); // Stop the countdown
+                    img.style.display = "none"; // Hide the QR code image
+                    thnxdisp.style.display='block';
+                    jokesText.innerHTML = "Click the button to generate a new QR code"; // Reset the message
+                    countdownDisplay.innerHTML = ""; // Hide the countdown
+                }
+            }, 1000); // Update every second
+        }
+    </script>
+</body>
+</html>

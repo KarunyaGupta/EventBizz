@@ -1,0 +1,119 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6d3c7; /* Soft light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    color: #ec6b2b; /* Deep teal color for title */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ec6b2b;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Input focus styling */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ec6b2b;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.4);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ec6b2b; /* Deep teal */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover and active states */
+button:hover {
+    background-color: #ec6b2b; /* Darker teal */
+}
+
+button:active {
+    transform: scale(0.98); /* Slight scale effect on click */
+}
+
+/* Link to Login page */
+a {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ec6b2b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the link */
+a:hover {
+    color: #004d40; /* Darker teal on hover */
+    text-decoration: underline;
+}
+
+/* Responsive design tweaks */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

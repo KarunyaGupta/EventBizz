@@ -1,0 +1,257 @@
+/* linear-gradient(rgb(113, 23, 234) 0%, rgb(234, 96, 96) 100%); */
+*{
+    font-family: Comic Sans MS !important;
+    /* background-color: #444; */
+}
+#wedding-main #main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wedding-main #main-heading img{
+    width: 260px;
+}
+#wedding-main .bg-body-tertiary{
+    background-color: transparent !important;
+}
+#wedding-main .collapse{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+#wedding-main .collapse li{
+    margin-left:3em;
+    margin-right: 3em;
+    /* border: 2px solid purple; */
+    /* text-decoration: underline; */
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#wedding-main .line{
+    height: 5px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: black;
+    transition: width 0.5s;
+}
+#wedding-main .line:hover{
+    width: 100%;
+}
+#wedding-main #wed-head{
+    margin-top: 3em;
+    margin-left: 5em;
+    font-weight: 1000;
+    font-family: Comic Sans MS ;
+    color: black;
+}
+#wedding-main #wed-head button{
+    /* border: 5px solid palevioletred; */
+    padding: 1em 1em;
+    background-color: transparent;
+    /* border-radius: 5px; */
+    color:black;
+}
+#wedding-main .text-form-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#wedding-main .left-box{
+    padding: 3em;
+    text-align: left;
+    font-size: 18px;
+    font-family: Ink Free;
+    color: rgb(154, 13, 60);
+    /* color: black; */
+}
+#wedding-main .right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    margin-right: 4em;
+    background-image: url(../images/Expensive-hall-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#wedding-main .right-inner-box{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.55);
+    height:100%;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+#wedding-main .right-inner-box input{
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 10px black;
+    padding: 0em 1em;
+}
+#wedding-main .right-inner-box button
+{
+    margin-top: 2em;
+    color: white;
+    font-weight: 700;
+    background:linear-gradient(rgb(113, 23, 234) 0%, rgb(234, 96, 96) 100%);
+}
+#wedding-main .marquee-container img{
+    width: 500px;
+    margin-top: 5em;
+    margin-left: 4em;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.6s;
+}
+#wedding-main .marquee-container h1{
+    text-align: center;
+    margin-top: 2em;
+    font-weight: 800;
+    font-family: Segoe Print ;
+    color:dimgray;
+    text-shadow: 1px 1px 5px rgb(48, 46, 46);
+}
+.marquee-container{
+    overflow: hidden;
+}
+#wedding-main .marquee-container .move-rtl{
+    animation: move-rtl 11s infinite linear;
+    display: flex;
+}
+#wedding-main .marquee-container .move-lft{
+    margin-top: -1em;
+    margin-bottom: 1em;
+    animation: move-lft 12s infinite linear;
+    display: flex;
+}
+.self-dropdown li a{
+    border: none;
+}
+.self-button-div{
+    margin-top: 5em;
+}
+.self-button{
+    padding: 1em  !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+    color: black !important;
+    background: linear-gradient(rgb(173, 141, 216) 0%, rgb(238, 160, 160) 100%);;
+}
+#wedding-main .self-modal{
+    width: 100% !important;
+}
+#wedding-main .self-modal #left-view{
+    margin-top: 4.5em;
+}
+#wedding-main .self-modal #left-view img{
+    width: 300px;
+    height: 200px;
+}
+/* KeyFrames */
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-88%);
+    }
+}
+@keyframes move-lft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+/* Hover Effects */
+#wedding-main .marquee-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px rgb(73, 2, 84);
+}
+
+
+/* Media Query */
+@media screen and (max-width:600px) {
+    
+    #wedding-main .text-form-cont{
+        grid-template-columns: 1fr;
+    }
+    #wedding-main .left-box{
+        padding: 1.5em;
+        font-size: 13px;
+    }
+    #wedding-main .right-box{
+        border-radius: 13px;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    #wedding-main .right-inner-box div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+    #wedding-main .right-inner-box .row div:nth-child(2){
+        margin-top: 2em;
+    }
+    #wedding-main .right-inner-box div:nth-child(2) .col{
+        margin-top: 0em;
+        margin-bottom: 3em;
+    }
+    #wedding-main .right-inner-box input{
+        padding: 0em 0.3em;
+    }
+    #wedding-main .right-inner-box button
+    {
+    font-size: 10px;
+    padding: 0.5em 0.7em !important;
+    }
+    #wedding-main .marquee-container img{
+        width: 140px;
+    }
+    #wedding-main .marquee-container .move-rtl{
+        animation: move-rtl 2s infinite linear;
+        display: flex;
+    }
+    /* @keyframes move-rtl{
+        0%{
+            transform:scale(1);
+        }
+        100%{
+            transform: scale(1.1);
+        }
+    } */
+    #wedding-main .marquee-container .move-lft{
+        animation: move-lft 2s infinite linear;
+    }
+    /* @keyframes move-lft{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.1);
+        }
+    } */
+    .self-button-div{
+        margin-top: 3em;
+    }
+    .self-button{
+        padding: 0.5em  !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        color: black !important;
+        background: linear-gradient(rgb(173, 141, 216) 0%, rgb(238, 160, 160) 100%);;
+    }
+    #wedding-main .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
